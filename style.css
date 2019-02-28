@@ -1,0 +1,130 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+div{
+    border-bottom-style: solid;
+    border-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 75px;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, white, white 50%, rgba(0, 0, 0, 0) 80%);
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, white, white 40%, rgba(0, 0, 0, 0) 70%);
+}
+
+h4 {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, white, white 30%, rgba(0, 0, 0, 0) 60%);
+}
+
+footer {
+    background-color: white;
+    color: black;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    border: none;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    display: none;
+    overflow: hidden;
+}
+
+#leftBorder { /* Create an ID for the left border */
+    margin-left: 0%; /* Set the left margin to 0%, to make it appear outside of main text area*/
+    margin-right: 0%; /* Set the right margin to 0%, to make it appear outside of main text area */
+    position: absolute; /* Set the position to absolute to help with position calculating */
+    top: 0; /* Set the top to 0, to move it to the top border to the top of the page */
+    bottom: 0; /* Set the bottom to 0, to move the bottom border to the bottom of the page */
+    left: 0%; /* Set the left to 0, to move the left border to the left of the page */
+    right: 0; /* Set the right to 0, to move the right border to the right of the page */
+    overflow: hidden; /* Hide any overflow text or content that is added to the division */
+    z-index: -2; /* Put this behind border effect, and behind devault divisions */
+    width: 20%; /* Set the width to 5%, so that it takes up the empty space outisde the main text area */
+    height: 100%; /* Set the height to 100%, so that it takes up the entire length of the page */
+    background-image: repeating-linear-gradient(red, orange 5%, yellow 10%, green 15%, blue 20%, indigo 25%, violet 30%, red 35%); /* Set the background of the division, to a linear gradient, that will repeat the colours of the rainbow */
+    border-bottom-style: none; /* Remove any border that might be added to it */
+}
+
+#leftBorderFade {
+    margin-left: 0%;
+    margin-right: 0%;
+    z-index: -1; /* Put this over the border, but behind default divisions */
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to left, black, rgba(255, 255, 255, 0.2));
+    border-bottom-style: none;
+}
+
+#rightBorder {
+    margin-left: 0%;
+    margin-right: 0%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 80%;
+    right: 0;
+    overflow: hidden;
+    z-index: -2;
+    width: 20%;
+    height: 100%;
+    background-image: repeating-linear-gradient(red, orange 5%, yellow 10%, green 15%, blue 20%, indigo 25%, violet 30%, red 35%);
+    border-bottom-style: none;
+}
+
+#rightBorderFade {
+    margin-left: 0%;
+    margin-right: 0%;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, black, rgba(255, 255, 255, 0.2));
+    border-bottom-style: none;
+}
