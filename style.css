@@ -12,7 +12,7 @@ body {
 
 div{
     border-bottom-style: solid;
-    border-color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border-color: white;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -34,15 +34,22 @@ h4 {
 }
 
 footer {
-    background-color: white;
     color: black;
+    height: 100px;
     margin-left: 5%;
     margin-right: 5%;
+    background-image: linear-gradient( white, white 70%, rgba(0, 0, 0, 0));
 }
 
 a {
     color: red;
     text-decoration: none;
+}
+
+br {
+    display: block; /* makes it have a width */
+    content: " "; /* clears default height */
+    margin-top: 12px; /* change this to whatever height you want it */
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
